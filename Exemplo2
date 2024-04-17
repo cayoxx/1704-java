@@ -1,25 +1,25 @@
-package elenco;
-import java.util.Scanner;
-
-public class FelipeLongo {
-
-	public static void main(String[] args) {
-		
-		Scanner ler = new Scanner(System.in);
-		int n;
-		
-		System.out.print("Digite um numero maior que zero: ");
-		n= ler.nextInt();
-		
-		
-		for (int i = 0; i <= n; i++) {
-			System.out.println("Número " +i);
+	package elenco;
+	import java.util.Scanner;
+	
+	public class FelipeLongo {
+	
+		public static void main(String[] args) {
+			
+			Scanner ler = new Scanner(System.in);
+			int n;
+			
+			System.out.print("Digite um numero maior que zero: ");
+			n= ler.nextInt();
+			
+			
+			for (int i = 0; i < n; i++) {
+				System.out.println("Número " +i);
+			}
+			
+			if (n <= 0) {
+				System.out.println("O número " + n + " não é maior que zero");
+			}
+	
 		}
-		
-		if (n < 0) {
-			System.out.println("O número " + n + " é menor que zero");
-		}
-
+	
 	}
-
-}
