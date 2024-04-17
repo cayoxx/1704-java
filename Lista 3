@@ -1,0 +1,27 @@
+package elenco;
+import java.util.Scanner;
+	
+public class FelipeLongo {
+	
+	public static void main(String[] args) {
+			
+		Scanner ler = new Scanner(System.in);
+		int s = 0;
+		int n = 0;
+			
+		System.out.println("Informe 10 números:");
+		System.out.println("=================================");
+		
+		for (int i = 0; i < 10; i++) {
+	             n = ler.nextInt();
+	             
+	             s = s + n;
+	        }
+		int impar = (s +1) /2;
+		int par = s/2;
+		System.out.println("O número " + s + " tem " + impar + " números impares e " + par + " números pares.");
+		ler.close();
+		}
+	}
+
+	
