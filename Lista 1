@@ -1,0 +1,23 @@
+package elenco;
+import java.util.Scanner;
+	
+public class FelipeLongo {
+	
+	public static void main(String[] args) {
+			
+		Scanner ler = new Scanner(System.in);
+		int a;
+			
+		System.out.println("Informe um número: ");
+		a = ler.nextInt();
+		System.out.println("=================================");
+		System.out.println("Números ímpares até " + a + ":");
+	    for (int i = 1; i <= a; i++) {
+	            if (i % 2 != 0) {
+	                System.out.println(i);
+		}
+		
+		ler.close();
+		}
+	}
+}
